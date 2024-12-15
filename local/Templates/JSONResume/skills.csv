@@ -1,0 +1,5 @@
+# CSV File: skills.csv
+# Columns: name,level,keywords
+Frontend,Senior,"HTML / JSX;SCSS / CSS / BEM / Styled Components;Javascript / Typescript;React / Next;Redux / Apollo"
+Backend,Senior,"Node;Ruby;Python;Postgres;Redis;Serverless"
+Devops,Senior,"AWS;G Cloud;Heroku;Caching"
