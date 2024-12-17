@@ -15,15 +15,13 @@ source ./ConsultantVariables.env
 
 export MO_PATH="bash ../../vendor/git.knownelement.com/ExternalVendorCode/mo/mo"
 export BUILD_TEMP_DIR="$PipelineClientWorkingDir/build-temp/ConsultantProfile"
-export BUILDYAML_CONSULTANT_PROFILE="$BUILD_TEMP_DIR/ConsultantProfile.yml"
 export BUILDYAML_CONSULTANT_INFOSHEET="$BUILD_TEMP_DIR/ConsultantInfoSheet.yml"
 
 # Cleanup previous intermediatge and final output artifacts
 
-rm $BUILD_TEMP_DIR/*.yml
-rm $BUILD_TEMP_DIR/*.md
+rm -vf $BUILD_TEMP_DIR/*.yml
 
-rm $BUILD_OUTPUT_DIR/*
+rm -vf $BUILD_OUTPUT_DIR/*
 
 # Call the build-pipeline-server in the vendored repository to produce updated output artifacts
 
