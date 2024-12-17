@@ -16,6 +16,8 @@ $MO_PATH $YamlInputTemplateFileConsultantInfoSheet > $BUILDYAML_CONSULTANT_INFOS
 
 echo "Creating candidate info sheet..."
 
+set =x
+
 $MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md > "$ConsultantInfoSheetMarkdownOutputFile"
 
 pandoc \
