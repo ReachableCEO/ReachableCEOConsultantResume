@@ -1,23 +1,21 @@
-# MarkdownResume-Pipeline-ClientExample
+# ReachableCEO Consultant Profile
 
-Example client repository for using the [MarkdownResume-Pipeline](https://git.knownelement.com/reachableceo/MarkdownResume-Pipeline) resume building
-microservice. The microservice is vendored into this repository.
 
-## Quickstart
+## Introduction
 
-### Runtime Requirements
+This is the profile that Charles N Wyble (@ReachableCEO) uses for seeking consulting engagements for a variety of services:
 
-- Bash (this entire project was developed on msys2 on Windows 10)
-- Ensure you have pandoc installed and in your path.
+- bespoke systems engineering/SRE/devops implementations
+- Extending TeamRental/YourDreamNameHere/sol-calc and other TSYS Group offerings.
 
-### Steps
+It contains the markdown/csv files that represent his production profile referenced from his website and various third party platforms.
 
-- Edit local/build/CandidateVariables.env to refelct your information.
-- Edit local/Templates/MarkdownResume/WorkHistory/WorkHistory.csv
-- Create and edit local/Templates/MarkdownResume/JobHistoryDetails/<position>.md to match the value in the first field of WorkHistory.csv
-- Repeat as necessary for your job history.
-- Edit local/Templates/MarkdownResume/SkillsAndProjects/Projects.md
-- Edit local/Template/MarkdownResume/SkillsAndProjects/Skills.csv
-- Edit local/Templates/MarkdownResume/CandidateInfoSheet.md
-- cd to the local/build directory and run bash build-demo-markdown.sh
-- Examine the PDF/MSWord output in local/build-output/*
+Two core artifacts are output from those files by this process:
+
+- PDF containing an in-depth portfolio
+- Rate sheet and engagement information
+
+## Production use
+
+- [My consulting site](https://consulting.reachableceo.com)
+
