@@ -1,10 +1,1 @@
-local/build-output/JSONResume/*.json
-local/build-output/MarkdownResume/*/*.doc
-local/build-output/MarkdownResume/*/*.md
-local/build-output/MarkdownResume/*/*.pdf
-
-local/build-temp/MarkdownResume/*.yml
-local/build-temp/MarkdownResume/*.md
-local/build-temp/MarkdownResume/*/*.md
-local/build-temp/MarkdownResume/*/*.pdf
-local/build-temp/MarkdownResume/*/*.doc
+local/build-temp/*
