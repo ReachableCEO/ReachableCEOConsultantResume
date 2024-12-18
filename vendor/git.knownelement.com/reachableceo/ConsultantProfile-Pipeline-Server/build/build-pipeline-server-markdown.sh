@@ -12,9 +12,11 @@ set -euo pipefail
 
 # Expand variables into rendered YAML files. These will be used by pandoc to create the output artifacts
 
-$MO_PATH $YamlInputTemplateFileConsultantInfoSheet > $BUILDYAML_CONSULTANT_INFOSHEET
+#$MO_PATH $YamlInputTemplateFileConsultantInfoSheet > $BUILDYAML_CONSULTANT_INFOSHEET
 
 echo "Creating candidate info sheet..."
+
+echo "MO Path: $MO_PATH"
 
 set -x
 
@@ -24,13 +26,13 @@ $MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md > "$Consult
 
 set +x
 
-pandoc \
-"$ConsultantInfoSheetMarkdownOutputFile" \
---template $PANDOC_TEMPLATE \
---metadata-file="$BUILDYAML_CONSULTANT_INFOSHEET" \
---from markdown \
---to=pdf \
---output $ConsultantInfoSheetPDFOutputFile
+#pandoc \
+#"$ConsultantInfoSheetMarkdownOutputFile" \
+#--template $PANDOC_TEMPLATE \
+#--metadata-file="$BUILDYAML_CONSULTANT_INFOSHEET" \
+#--from markdown \
+#--to=pdf \
+#--output $ConsultantInfoSheetPDFOutputFile
 
 #############################################
 # Create the consultant profile PDF
