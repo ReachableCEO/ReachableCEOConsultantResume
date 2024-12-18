@@ -38,7 +38,7 @@ $MO_PATH $YamlInputTemplateFileConsultantProfile > $BUILDYAML_CONSULTANT_PROFILE
 # (...)
 #############################################################################
 
-$MO_PATH $PipelineClientWorkingDir/Templates/ConsultantInfoSheet.md > "$ConsultantProfileMarkdownOutputFile"
+$MO_PATH $PipelineClientWorkingDir/Templates/ConsultantProfile.md > "$ConsultantProfileMarkdownOutputFile"
 
 
 pandoc \
