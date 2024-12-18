@@ -20,9 +20,10 @@ echo "MO Path: $MO_PATH"
 
 set -x
 
-$MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md
+#$MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md
+cat $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md
+#$MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md > "$ConsultantInfoSheetMarkdownOutputFile"
 
-$MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md > "$ConsultantInfoSheetMarkdownOutputFile"
 
 set +x
 
