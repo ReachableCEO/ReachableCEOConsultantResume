@@ -18,22 +18,15 @@ echo "Creating candidate info sheet..."
 
 echo "MO Path: $MO_PATH"
 
-set -x
+$MO_PATH $PipelineClientWorkingDir/Templates/ConsultantInfoSheet.md > "$ConsultantInfoSheetMarkdownOutputFile"
 
-#$MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md
-cat $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md
-#$MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md > "$ConsultantInfoSheetMarkdownOutputFile"
-
-
-set +x
-
-#pandoc \
-#"$ConsultantInfoSheetMarkdownOutputFile" \
-#--template $PANDOC_TEMPLATE \
-#--metadata-file="$BUILDYAML_CONSULTANT_INFOSHEET" \
-#--from markdown \
-#--to=pdf \
-#--output $ConsultantInfoSheetPDFOutputFile
+pandoc \
+"$ConsultantInfoSheetMarkdownOutputFile" \
+--template $PANDOC_TEMPLATE \
+--metadata-file="$BUILDYAML_CONSULTANT_INFOSHEET" \
+--from markdown \
+--to=pdf \
+--output $ConsultantInfoSheetPDFOutputFile
 
 #############################################
 # Create the consultant profile PDF
