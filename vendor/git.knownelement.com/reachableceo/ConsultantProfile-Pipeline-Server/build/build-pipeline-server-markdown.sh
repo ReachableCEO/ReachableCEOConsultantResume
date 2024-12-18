@@ -16,17 +16,13 @@ $MO_PATH $YamlInputTemplateFileConsultantInfoSheet > $BUILDYAML_CONSULTANT_INFOS
 
 echo "Creating candidate info sheet..."
 
-echo "Profile file name: $PROFILE_FILE_NAME"
-echo "Markdown file: $ConsultantInfoSheetMarkdownOutputFile"
-echo "PDF file: $ConsultantInfoSheetPDFOutputFile"
-
 set -x
 
-
-#$MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md > "$ConsultantInfoSheetMarkdownOutputFile"
 $MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md
 
-exit
+$MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md > "$ConsultantInfoSheetMarkdownOutputFile"
+
+set +x
 
 pandoc \
 "$ConsultantInfoSheetMarkdownOutputFile" \
