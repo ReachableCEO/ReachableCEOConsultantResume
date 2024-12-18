@@ -16,6 +16,7 @@ source ./ConsultantVariables.env
 export MO_PATH="bash ../../vendor/git.knownelement.com/ExternalVendorCode/mo/mo"
 export BUILD_TEMP_DIR="$PipelineClientWorkingDir/build-temp/ConsultantProfile"
 export BUILDYAML_CONSULTANT_INFOSHEET="$BUILD_TEMP_DIR/ConsultantInfoSheet.yml"
+export BUILDYAML_CONSULTANT_PROFILE="$BUILD_TEMP_DIR/ConsultantProfile.yml"
 
 # Cleanup previous intermediatge and final output artifacts
 
