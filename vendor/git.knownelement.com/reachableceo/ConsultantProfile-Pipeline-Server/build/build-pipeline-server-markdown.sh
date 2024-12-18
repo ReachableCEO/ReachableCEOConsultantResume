@@ -33,6 +33,14 @@ echo "Creating consultant profile..."
 
 $MO_PATH $YamlInputTemplateFileConsultantProfile > $BUILDYAML_CONSULTANT_PROFILE
 
+#############################################################################
+# Logic to create the consultant profile markdown output file goes here
+# (...)
+#############################################################################
+
+$MO_PATH $PipelineClientWorkingDir/Templates/ConsultantInfoSheet.md > "$ConsultantProfileMarkdownOutputFile"
+
+
 pandoc \
 "$ConsultantProfileMarkdownOutputFile" \
 --template $PANDOC_TEMPLATE \
