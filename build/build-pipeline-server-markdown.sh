@@ -16,7 +16,12 @@ $MO_PATH $YamlInputTemplateFileConsultantInfoSheet > $BUILDYAML_CONSULTANT_INFOS
 
 echo "Creating candidate info sheet..."
 
+echo "Profile file name: $PROFILE_FILE_NAME"
+
 set -x
+
+export ConsultantInfoSheetMarkdownOutputFile="$BUILD_OUTPUT_DIR/$PROFILE_FILE_NAME-ConsultantInfoSheet.md"
+export ConsultantInfoSheetPDFOutputFile="$BUILD_OUTPUT_DIR/$PROFILE_FILE_NAME-ConsultantInfoSheet.pdf"
 
 $MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md > "$ConsultantInfoSheetMarkdownOutputFile"
 
