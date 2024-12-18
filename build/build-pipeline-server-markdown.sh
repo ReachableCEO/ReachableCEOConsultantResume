@@ -23,7 +23,10 @@ echo "PDF file: $ConsultantInfoSheetPDFOutputFile"
 set -x
 
 
-$MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md > "$ConsultantInfoSheetMarkdownOutputFile"
+#$MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md > "$ConsultantInfoSheetMarkdownOutputFile"
+$MO_PATH $PipelineClientWorkingDir/Templates/CounsultantInfoSheet.md
+
+exit
 
 pandoc \
 "$ConsultantInfoSheetMarkdownOutputFile" \
