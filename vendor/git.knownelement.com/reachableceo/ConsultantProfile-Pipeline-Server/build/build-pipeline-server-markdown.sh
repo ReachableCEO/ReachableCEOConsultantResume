@@ -12,7 +12,7 @@ set -euo pipefail
 
 # Expand variables into rendered YAML files. These will be used by pandoc to create the output artifacts
 
-#$MO_PATH $YamlInputTemplateFileConsultantInfoSheet > $BUILDYAML_CONSULTANT_INFOSHEET
+$MO_PATH $YamlInputTemplateFileConsultantInfoSheet > $BUILDYAML_CONSULTANT_INFOSHEET
 
 echo "Creating candidate info sheet..."
 
